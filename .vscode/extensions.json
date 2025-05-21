@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "shufo.vscode-blade-formatter",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "laravel.vscode-laravel",
+        "open-southeners.laravel-pint",
+        "editorconfig.editorconfig",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker"
+    ]
+}
