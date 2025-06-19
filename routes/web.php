@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SampleController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -9,6 +10,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/sample', [SampleController::class, 'index']);
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
