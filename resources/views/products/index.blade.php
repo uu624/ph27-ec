@@ -1,6 +1,6 @@
-<html>
+@extends('layouts.base')
 
-<body>
+@section('content')
     <h1>商品一覧</h1>
 
     <ul>
@@ -11,6 +11,4 @@
             </li>
         @endforeach
     </ul>
-</body>
-
-</html>
+@endsection

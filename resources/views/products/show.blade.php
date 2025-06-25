@@ -1,9 +1,7 @@
-<html>
+@extends('layouts.base')
 
-<body>
+@section('content')
     <h1>{{ $product->name }}</h1>
 
     <p>{{ $product->price }} 円</p>
-</body>
-
-</html>
+@endsection
