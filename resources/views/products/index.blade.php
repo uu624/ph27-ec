@@ -6,7 +6,7 @@
     <ul>
         @foreach ($products as $product)
             <li>
-                <a href="/products/{{ $product->id }}">{{ $product->name }}</a>
+                <a href="{{ route('products.show', ['id' => $product->id]) }}">{{ $product->name }}</a>
                 {{ $product->price }} 円
             </li>
         @endforeach
@@ -16,7 +16,7 @@
     <ul>
         @foreach ($saleProducts as $product)
             <li>
-                <a href="/products/{{ $product->id }}">{{ $product->name }}</a>
+                <a href="{{ route('products.show', ['id' => $product->id]) }}">{{ $product->name }}</a>
                 {{ $product->price }} 円
             </li>
         @endforeach
