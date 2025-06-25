@@ -6,7 +6,7 @@
     <ul>
         @foreach ($products as $product)
             <li>
-                {{ $product->name }}
+                <a href="/products/{{ $product->id }}">{{ $product->name }}</a>
                 {{ $product->price }} 円
             </li>
         @endforeach
