@@ -1,16 +1,16 @@
-<html>
+@extends('layouts.base')
 
-<body>
-    <h1>商品一覧</h1>
+@section('content')
+    <h2>商品一覧</h2>
 
     <ul>
         @foreach ($products as $product)
             <li>
-                {{ $product->name }}
+                <a href="{{ route('products.show', ['id' => $product->id]) }}">
+                    {{ $product->name }}
+                </a>
                 {{ $product->price }} 円
             </li>
         @endforeach
     </ul>
-</body>
-
-</html>
+@endsection
