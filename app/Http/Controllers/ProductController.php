@@ -10,8 +10,11 @@ class ProductController extends Controller
     {
         $products = Product::all();
 
+        $saleProducts = Product::where('price', '<', 100)->get();
+
         return view('products.index', [
             'products' => $products,
+            'saleProducts' => $saleProducts,
         ]);
     }
 

@@ -13,4 +13,14 @@
             </li>
         @endforeach
     </ul>
+
+    <h2>セール中の商品</h2>
+    <ul>
+        @foreach ($saleProducts as $product)
+            <li>
+                {{ $product->name }}
+                {{ $product->price }} 円
+            </li>
+        @endforeach
+    </ul>
 @endsection
