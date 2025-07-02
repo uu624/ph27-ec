@@ -23,4 +23,8 @@
             </li>
         @endforeach
     </ul>
+
+    <div>
+        <a href="{{ route('cart.index') }}">カートを見る</a>
+    </div>
 @endsection

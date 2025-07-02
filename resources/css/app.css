@@ -170,3 +170,7 @@ h2 {
 a {
     text-decoration: underline;
 }
+
+input {
+    border: 1px solid #ccc;
+}
