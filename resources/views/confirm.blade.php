@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    <h1>カート</h1>
+    <h1>確認画面</h1>
     @foreach ($items as $item)
         <div>
             {{ $item['product']->name }}
@@ -14,12 +14,7 @@
             合計金額: {{ $totalPrice }}円
         </div>
     @endif
-    <form action={{ route('cart.destroy') }} method="POST">
-        @csrf
-        @method('DELETE')
-        <input type="submit" value="カートを空にする">
-    </form>
     <div>
-        <a href="{{ route('confirm') }}">注文に進む</a>
+        <a href="{{ route('order') }}">注文する</a>
     </div>
 @endsection

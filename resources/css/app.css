@@ -174,3 +174,7 @@ a {
 input {
     border: 1px solid #ccc;
 }
+
+.error {
+    background-color: #ffabab;
+}
