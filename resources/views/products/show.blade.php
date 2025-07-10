@@ -11,7 +11,7 @@
             <p>{{ $message }}</p>
         @enderror
         <input type="hidden" name="productId" value="{{ $product->id }}">
-        <input type="number" name="quantity">個<br>
+        <input type="number" name="quantity" class="@error('quantity') input-error @enderror">個<br>
         <input type="submit" value="カートに入れる">
     </form>
 @endsection
